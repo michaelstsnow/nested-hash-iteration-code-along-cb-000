@@ -20,7 +20,7 @@ def remove_strawberry(contacts)
       if attribute == :favorite_ice_cream_flavors
         if data.include?("strawberry")
           fixed_flavors=data.delete("strawberry");
-          contacts[contact][:favorite_ice_cream_flavors] =data.delete("strawberry");
+          contacts[contact][:favorite_ice_cream_flavors] =data.delete(strawberry);
         else
         end
       else
