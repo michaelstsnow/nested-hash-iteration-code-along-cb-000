@@ -19,8 +19,8 @@ def remove_strawberry(contacts)
     contact_data_hash.each do |attribute,data|
       if attribute == :favorite_ice_cream_flavors
         if data.include?("strawberry")
-          fixed_flavors=data.delete("strawberry");
-          contacts[contact][:favorite_ice_cream_flavors] =data.delete("strawberry");
+          data.delete("strawberry");
+          contacts[contact][:favorite_ice_cream_flavors] =data
         else
         end
       else
